@@ -18,6 +18,8 @@
         "react/jsx-indent-props": [2, 4],
         "indent": ["error", 4],
         "global-require": [0],
-        "linebreak-style": "off"
+        "linebreak-style": "off",
+        "no-unused-vars": "warn",
+        "max-len": "off"
     }
 }
