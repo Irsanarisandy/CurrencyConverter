@@ -1,5 +1,6 @@
 import React from 'react';
-import { ScrollView, StatusBar, Platform } from 'react-native';
+import { ScrollView, StatusBar } from 'react-native';
+import PropTypes from 'prop-types';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { ListItem, Separator } from '../components/List';
 
@@ -8,17 +9,20 @@ const styles = EStyleSheet.create({
     $orange: '$primaryOrange',
     $green: '$primaryGreen',
     $purple: '$primaryPurple',
-    $paddingTop: Platform.OS === 'ios' ? 20 : StatusBar.currentHeight,
 });
 
 class Themes extends React.Component {
+    static propTypes = {
+        navigation: PropTypes.object,
+    };
+
     handleThemePressed = (color) => {
-        console.log('press theme:', color);
+        this.props.navigation.goBack();
     };
 
     render() {
         return (
-            <ScrollView style={{ paddingTop: styles.$paddingTop }}>
+            <ScrollView>
                 <StatusBar barStyle="default" translucent={false} />
                 <ListItem
                     text="Blue"
