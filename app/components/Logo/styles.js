@@ -12,7 +12,7 @@ export default EStyleSheet.create({
         justifyContent: 'center',
         width: imageWidth,
     },
-    image: {
+    logo: {
         width: imageWidth / 2,
     },
     text: {
