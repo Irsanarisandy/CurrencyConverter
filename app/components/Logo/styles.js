@@ -14,6 +14,7 @@ export default EStyleSheet.create({
     },
     logo: {
         width: imageWidth / 2,
+        tintColor: '$primaryBlue',
     },
     text: {
         fontWeight: '600',

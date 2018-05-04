@@ -20,6 +20,8 @@
         "global-require": [0],
         "linebreak-style": "off",
         "no-unused-vars": "warn",
+        "prefer-destructuring": "warn",
+        "prefer-const": "off",
         "max-len": "off"
     }
 }
