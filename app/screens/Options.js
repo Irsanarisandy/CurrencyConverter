@@ -20,7 +20,7 @@ class Options extends React.Component {
     };
 
     handleSitePressed = () => {
-        Linking.openURL('https://fixer.io').catch(() =>
+        Linking.openURL('https://exchangeratesapi.io/').catch(() =>
             this.props.alertWithType(
                 'error',
                 'Error:',
@@ -45,7 +45,7 @@ class Options extends React.Component {
                 />
                 <Separator />
                 <ListItem
-                    text="Fixer.io"
+                    text="Exchangeratesapi.io"
                     onPress={this.handleSitePressed}
                     customIcon={
                         <Ionicons

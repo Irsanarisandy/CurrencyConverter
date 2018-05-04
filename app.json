@@ -1,5 +1,15 @@
 {
-  "expo": {
-    "sdkVersion": "27.0.0"
-  }
+    "expo": {
+        "name": "Currency Converter",
+        "description":
+            "Convert currencies based on rates from European Central Bank",
+        "slug": "currency-converter",
+        "sdkVersion": "27.0.0",
+        "version": "1.0.0",
+        "githubUrl": "https://github.com/Irsanarisandy/CurrencyConverter",
+        "orientation": "portrait",
+        "privacy": "public",
+        "icon": "./assets/images/icon.png",
+        "primaryColor": "#4F6D7A"
+    }
 }
