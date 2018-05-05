@@ -10,6 +10,14 @@
         "orientation": "portrait",
         "privacy": "public",
         "icon": "./assets/images/icon.png",
-        "primaryColor": "#4F6D7A"
+        "primaryColor": "#4F6D7A",
+        "android": {
+            "package": "com.irsanarisandy.currencyconverter",
+            "permissions": [],
+            "playStoreUrl": "https://play.google.com/store/apps/details?id=com.irsanarisandy.currencyconverter"
+        },
+        "ios": {
+            "bundleIdentifier": "com.irsanarisandy.currencyconverter"
+        }
     }
 }
