@@ -8,7 +8,7 @@ import { InputWithButton } from '../components/TextInput';
 import { ClearButton } from '../components/Buttons';
 import { LastConverted } from '../components/Text';
 import { Header } from '../components/Header';
-import { connectAlert } from '../components/Alert';
+import { AlertConsumer } from '../components/Alert';
 import { ThemeConsumer } from '../components/Theme';
 import {
     getInitialConversion,
@@ -141,4 +141,10 @@ const mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps)(connectAlert(Home));
+const ConnectedHome = connect(mapStateToProps)(Home);
+
+export default props => (
+    <AlertConsumer>
+        {context => <ConnectedHome {...context} {...props} />}
+    </AlertConsumer>
+);
